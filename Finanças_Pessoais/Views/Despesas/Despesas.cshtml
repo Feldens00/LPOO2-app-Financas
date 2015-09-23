@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Finanças_Pessoais.Models.Despesas>
+@{
+    ViewBag.Title = "Despesas";
+}
+
+<h2>Despesas</h2>
+<a class="btn btn-primary" href="~/Despesas/CreateDespesas">Adicionar Despesa</a>
+<table class="table table-responsive table-hover">
+    <thead>
+        <tr>
+            
+            <th>Id</th>
+            <th>Lugar</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.Id</th>
+            <th>@item.Lugar</th>
+            <th>@item.Data</th>
+            <th>@item.Valor</th>
+            <th>@item.Tipo</th>
+            <th><a class="btn btn-warning" href="~/Despesas/Update/@item.Id">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Despesas/Delete/@item.Id">Deletar</a></th>
+        </tr>
+    }
+</table>

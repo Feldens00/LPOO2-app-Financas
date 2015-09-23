@@ -1,0 +1,44 @@
+﻿@model Finanças_Pessoais.Models.Despesas
+@{
+    ViewBag.Title = "CreateDespesas";
+}
+
+<h2>Adicionar Despesas</h2>
+
+
+<div class="panel">
+    <form action="~/Despesas/CreateDespesas" method="post">
+        <div class="form-group">
+            <label>id</label>
+            <input class="form-control" type="text" id="Id" name="Id" />
+        </div>
+
+        <div class="form-group">
+            <label>Lugar</label>
+            <input class="form-control" placeholder="Lugar da despesa" type="text" id="Lugar" name="Lugar" />
+        </div>
+
+        <div class="form-group">
+            <label>Data</label>
+            <input class="form-control" placeholder="Data" type="text" id="Data" name="Data" />
+        </div>
+
+        <div class="form-group">
+            <label>Valor</label>
+            <input class="form-control" placeholder="Valor da Despesa" type="text" id="´Valor" name="Valor" />
+        </div>
+
+        <div class="form-group">
+            <label>Tipo</label>
+            <select name="Tipo">
+
+                @foreach (var item in @ViewBag.ListTipo)
+                {
+                    <option value="@item.Nome">@item.Nome</option>
+                }
+            </select>
+        </div>
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

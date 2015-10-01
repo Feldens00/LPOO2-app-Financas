@@ -107,12 +107,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DespesasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TipoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Despesas.cs" />
     <Compile Include="Models\DespesasRepositorio.cs" />
     <Compile Include="Models\Tipo.cs" />
+    <Compile Include="Models\TipoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +129,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Despesas\Despesas.cshtml" />
     <Content Include="Views\Despesas\Update.cshtml" />
+    <Content Include="Views\Tipo\Tipo.cshtml" />
+    <Content Include="Views\Tipo\CreateTipo.cshtml" />
+    <Content Include="Views\Tipo\Update.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -10,15 +10,15 @@ namespace Finanças_Pessoais.Models
         public int Id { get; set; }
         public string Lugar { get; set; }
         public string Data { get; set; }
-        public int  Valor { get; set; }
-        public string Tipo { get; set; }
+        public decimal Valor { get; set; }
+        public Tipo Tipo { get; set; }
 
         public Despesas()
         {
 
         }
         
-        public Despesas(int pId, string pLugar, string pData, int pValor, string pTipo )
+        public Despesas(int pId, string pLugar, string pData, decimal pValor, Tipo pTipo )
         {
             Id = pId;
             Lugar = pLugar;

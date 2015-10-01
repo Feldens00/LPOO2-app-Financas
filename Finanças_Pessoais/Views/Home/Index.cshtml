@@ -1,12 +1,11 @@
-﻿
+﻿@model IEnumerable<Finanças_Pessoais.Models.Despesas>
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Despesas</h2>
+<h2>Index</h2>
 <a class="btn btn-primary" href="~/Despesas/CreateDespesas">Adicionar Despesa</a>
 <table class="table table-responsive table-hover">
-   
     <thead>
         <tr>
 
@@ -26,10 +25,9 @@
             <th>@item.Lugar</th>
             <th>@item.Data</th>
             <th>@item.Valor</th>
-            <th>@item.Tipo</th>
+            <th>@item.Tipo.Nome</th>
             <th><a class="btn btn-warning" href="~/Despesas/Update/@item.Id">Atualizar</a></th>
             <th><a class="btn btn-danger" href="~/Despesas/Delete/@item.Id">Deletar</a></th>
         </tr>
     }
 </table>
-

@@ -30,11 +30,12 @@
 
         <div class="form-group">
             <label>Tipo</label>
-            <select name="Tipo">
+            <select class="form-control" name="tipo.Id">
+                <option value="value">Selecione um Tipo</option>
 
-                @foreach (var item in @ViewBag.ListTipo)
+                @foreach (Finanças_Pessoais.Models.Tipo item in @ViewBag.ListTipo)
                 {
-                    <option value="@item.Nome">@item.Nome</option>
+                    <option value="@item.IdTipo">@item.Nome</option>
                 }
             </select>
         </div>

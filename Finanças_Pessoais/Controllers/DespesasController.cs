@@ -12,11 +12,12 @@ namespace Finanças_Pessoais.Controllers
     {
         DataBase database = new DataBase();
         DespesasRepositorio despRep = new DespesasRepositorio();
+        TipoRepositorio tipRep = new TipoRepositorio();
 
         // GET: Aluno
         public ActionResult Despesas()
         {
-            var despesas = despRep.getAll();
+            var despesas = despRep.getAll();    
 
             return View(despesas);
         }
@@ -24,7 +25,8 @@ namespace Finanças_Pessoais.Controllers
         public ActionResult CreateDespesas()
         {
             Tipo.popular();
-            ViewBag.ListTipo = Tipo.tipo;
+
+            ViewBag.ListTipo = tipRep.getAll(); ;
             return View();
         }
 
@@ -36,21 +38,25 @@ namespace Finanças_Pessoais.Controllers
             return RedirectToAction("Despesas");
         }
 
-        public ActionResult Delete(int Id)
+        public ActionResult Delete(int id)
         {
-            despRep.Delete(Id);
+            despRep.Delete(id);
             return RedirectToAction("Despesas");
         }
 
-        public ActionResult Update(int Id)
+        public ActionResult Update(int id)
         {
-            var despesas = despRep.getOne(Id);
+            Tipo.popular();
+            ViewBag.ListTipo = tipRep.getAll(); ;
+            var despesas = despRep.getOne(id);
             return View(despesas);
         }
 
         [HttpPost]
         public ActionResult Update(Despesas despesas)
         {
+            Tipo.popular();
+            ViewBag.ListTipo = tipRep.getAll(); ;
             despRep.Update(despesas);
             return RedirectToAction("Despesas");
         }

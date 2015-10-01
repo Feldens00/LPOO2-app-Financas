@@ -1,0 +1,27 @@
+﻿@model Finanças_Pessoais.Models.Tipo
+@{
+    ViewBag.Title = "CreateTipo";
+}
+
+<h2>Adicionar Tipo</h2>
+
+
+<div class="panel">
+    <form action="~/Tipo/CreateTipo" method="post">
+      
+
+        <div class="form-group">
+            <label>id</label>
+            <input class="form-control" type="number" id="IdTipo" name="IdTipo" />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" placeholder="Nome do tipo" type="text" id="Nome" name="Nome" />
+        </div>
+
+        
+
+        <button class="btn btn-default" type="submit">Salvar</button>
+    </form>
+</div>

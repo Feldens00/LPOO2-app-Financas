@@ -9,12 +9,12 @@ namespace Finanças_Pessoais.Controllers
 {
     public class HomeController : Controller
     {
-        DespesasRepositorio desRep = new DespesasRepositorio();
+        DespesasRepositorio despRep = new DespesasRepositorio();
         // GET: Home
         public ActionResult Index()
         {
-            var desp = desRep.getLimit();
-            return View(desp);
+            var despesas = despRep.getAll();
+            return View(despesas);
         }
     }
 }

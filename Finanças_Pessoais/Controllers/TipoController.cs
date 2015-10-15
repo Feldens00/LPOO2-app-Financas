@@ -30,9 +30,10 @@ namespace Finanças_Pessoais.Controllers
         [HttpPost]
         public ActionResult CreateTipo(Tipo tipo)
         {
-            //Tipo.popular();
-            tipRep.Create(tipo);
-            return RedirectToAction("Tipo");
+       
+                tipRep.Create(tipo);
+                return RedirectToAction("Tipo");
+         
         }
 
         public ActionResult Delete(int id)
@@ -41,18 +42,18 @@ namespace Finanças_Pessoais.Controllers
             return RedirectToAction("Tipo");
         }
 
-        public ActionResult Update(int id)
+        public ActionResult UpdateTipo(int id)
         {
-            // Tipo.popular();
-           
-            var tipo = tipRep.getOne(id);
-            return View(tipo);
+
+
+            var tipov = tipRep.getOnes(id);
+            return View(tipov);
         }
 
         [HttpPost]
-        public ActionResult Update(Tipo tipo)
+        public ActionResult UpdateTipo(Tipo tipo)
         {
-            //Tipo.popular();
+            
          
             tipRep.Update(tipo);
             return RedirectToAction("Tipo");

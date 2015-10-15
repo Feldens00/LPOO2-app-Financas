@@ -5,11 +5,8 @@
 
 <h2>Update Despesas</h2>
 <div class="panel">
-    <form action="~/Despesas/Update" method="post">
-        <div class="form-group">
-            <label>Id</label>
-            <input class="form-control" type="number" id="Id" name="Id" value="@Model.Id" />
-        </div>
+    <form action="~/Despesas/Update/@Model.Id" method="post">
+       
 
         <div class="form-group">
             <label>Lugar</label>
@@ -28,11 +25,12 @@
 
         <div class="form-group">
             <label>Tipo</label>
-            <select name="Tipo">
+            <select class="form-control" id="SelectedUserRoleId" name="Tipo.IdTipo">
 
-                @foreach (var item in @ViewBag.ListTipo)
+                <option value="@Model.Tipo.IdTipo">@Model.Tipo.Nome</option>
+                @foreach (Finanças_Pessoais.Models.Tipo item in @ViewBag.ListTipo)
                 {
-                    <option value="@item.Nome">@item.Nome</option>
+                    <option value="@item.IdTipo">@item.Nome</option>
                 }
             </select>
         </div>

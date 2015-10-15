@@ -24,18 +24,23 @@ namespace Finanças_Pessoais.Controllers
         [HttpGet]
         public ActionResult CreateDespesas()
         {
-            Tipo.popular();
 
-            ViewBag.ListTipo = tipRep.getAll(); ;
+            List<Tipo> ListTipo = new List<Tipo>(tipRep.getAll());
+            ViewBag.ListTipo = ListTipo;
             return View();
         }
 
         [HttpPost]
         public ActionResult CreateDespesas(Despesas despesas)
         {
-            Tipo.popular();
-            despRep.Create(despesas);
-            return RedirectToAction("Despesas");
+            List<Tipo> ListTipo = new List<Tipo>(tipRep.getAll());
+            ViewBag.ListTipo = ListTipo;
+            if (ModelState.IsValid) {
+                despRep.Create(despesas);
+                return RedirectToAction("Despesas");
+            }
+            return View();
+            
         }
 
         public ActionResult Delete(int id)
@@ -46,8 +51,8 @@ namespace Finanças_Pessoais.Controllers
 
         public ActionResult Update(int id)
         {
-            Tipo.popular();
-            ViewBag.ListTipo = tipRep.getAll(); ;
+            List<Tipo> ListTipo = new List<Tipo>(tipRep.getAll());
+            ViewBag.ListTipo = ListTipo;
             var despesas = despRep.getOne(id);
             return View(despesas);
         }
@@ -55,8 +60,7 @@ namespace Finanças_Pessoais.Controllers
         [HttpPost]
         public ActionResult Update(Despesas despesas)
         {
-            Tipo.popular();
-            ViewBag.ListTipo = tipRep.getAll(); ;
+           
             despRep.Update(despesas);
             return RedirectToAction("Despesas");
         }

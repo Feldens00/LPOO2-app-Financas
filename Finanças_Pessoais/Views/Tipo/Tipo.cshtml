@@ -5,11 +5,12 @@
 
 <h2>Tipo</h2>
 
-<a class="btn btn-primary" href="~/Tipo/CreateTipo"> Adicionar Tipo </a>
+<a class="btn btn-primary" href="~/Tipo/CreateTipo/">Adicionar Tipo</a>
 <table class="table table-responsive table-hover">
     <thead>
         <tr>
 
+           
             <th>Id</th>
             <th>Nome</th>
             <th></th>
@@ -19,10 +20,11 @@
     @foreach (var item in Model)
     {
         <tr>
-            <
+            
+            <th>@item.IdTipo</th>
             <th>@item.Nome</th>
-            <th><a class="btn btn-warning" href="~/Despesas/Update/@item.IdTipo">Atualizar</a></th>
-            <th><a class="btn btn-danger" href="~/Despesas/Delete/@item.IdTipo">Deletar</a></th>
+            <th><a class="btn btn-warning" href="~/Tipo/UpdateTipo/@item.IdTipo">Atualizar</a></th>
+            <th><a class="btn btn-danger" href="~/Tipo/Delete/@item.IdTipo">Deletar</a></th>
         </tr>
     }
 </table>

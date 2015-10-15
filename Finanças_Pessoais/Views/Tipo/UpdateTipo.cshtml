@@ -1,0 +1,26 @@
+﻿@model Finanças_Pessoais.Models.Tipo
+@{
+    ViewBag.Title = "UpdateTipo";
+}
+
+<h2>Update Tipo</h2>
+<div class="panel">
+
+    <form action="~/Tipo/UpdateTipo" method="post">
+
+       
+        <div class="form-group">
+            
+            <input class="form-control" type="hidden" id="IdTipo" name="IdTipo" value="@Model.IdTipo" />
+        </div>
+
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" type="text" id="Nome" name="Nome" value="@Model.Nome" />
+        </div>
+
+      
+
+        <button type="submit" class="btn btn-default">Atualizar Despesa</button>
+    </form>
+</div>

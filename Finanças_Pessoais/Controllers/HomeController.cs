@@ -13,7 +13,7 @@ namespace Finanças_Pessoais.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var despesas = despRep.getAll();
+            var despesas = despRep.getLimit();
             return View(despesas);
         }
     }

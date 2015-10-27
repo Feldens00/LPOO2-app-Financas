@@ -1,4 +1,5 @@
-﻿using Finanças_Pessoais.Models;
+﻿using Entity;
+using Repositorys;
 using FinancasConnections;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,7 @@ namespace Finanças_Pessoais.Controllers
         {
 
 
-            var tipov = tipRep.getOnes(id);
+            var tipov = tipRep.getOne(id);
             return View(tipov);
         }
 

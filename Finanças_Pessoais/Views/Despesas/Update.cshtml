@@ -1,4 +1,4 @@
-﻿@model Finanças_Pessoais.Models.Despesas
+﻿@model Entity.Despesas
 @{
     ViewBag.Title = "UpdateDespesas";
 }
@@ -28,7 +28,7 @@
             <select class="form-control" id="SelectedUserRoleId" name="Tipo.IdTipo">
 
                 <option value="@Model.Tipo.IdTipo">@Model.Tipo.Nome</option>
-                @foreach (Finanças_Pessoais.Models.Tipo item in @ViewBag.ListTipo)
+                @foreach (Entity.Tipo item in @ViewBag.ListTipo)
                 {
                     <option value="@item.IdTipo">@item.Nome</option>
                 }

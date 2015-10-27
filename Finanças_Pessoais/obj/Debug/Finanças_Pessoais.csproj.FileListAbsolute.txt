@@ -34,3 +34,7 @@ C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais
 C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\bin\System.Web.Mvc.xml
 C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\obj\Debug\Finanças_Pessoais.dll
 C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\obj\Debug\Finanças_Pessoais.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\bin\ClassLibrary1.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\bin\Repositorys.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\bin\ClassLibrary1.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Finanças_Pessoais\bin\Repositorys.pdb

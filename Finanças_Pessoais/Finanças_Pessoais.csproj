@@ -111,10 +111,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Despesas.cs" />
-    <Compile Include="Models\DespesasRepositorio.cs" />
-    <Compile Include="Models\Tipo.cs" />
-    <Compile Include="Models\TipoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,11 +138,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\FinancasConnections\FinancasConnections\FinancasConnections.csproj">
       <Project>{9a0d186e-2939-4a6b-b5e5-e0feef1b6177}</Project>
       <Name>FinancasConnections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\Entity.csproj">
+      <Project>{2e88b7b7-9d4d-4de2-8c6d-ad57864d8c46}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositorys\Repositorys.csproj">
+      <Project>{6abd128f-7f65-4cbe-a075-707b241c0fc9}</Project>
+      <Name>Repositorys</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

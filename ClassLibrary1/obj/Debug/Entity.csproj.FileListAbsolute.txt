@@ -1,0 +1,5 @@
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\ClassLibrary1\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

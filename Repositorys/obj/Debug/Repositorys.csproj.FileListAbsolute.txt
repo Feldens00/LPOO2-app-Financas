@@ -1,0 +1,10 @@
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\Repositorys.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\Repositorys.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\ClassLibrary1.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\FinancasConnections.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\MySql.Data.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\FinancasConnections.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\bin\Debug\ClassLibrary1.pdb
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\obj\Debug\Repositorys.csprojResolveAssemblyReference.cache
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\obj\Debug\Repositorys.dll
+C:\Users\Artur\Desktop\Ulbra\Linguagem  Orientada a Objetos 2\Finanças_Pessoais\Repositorys\obj\Debug\Repositorys.pdb
